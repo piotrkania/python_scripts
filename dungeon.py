@@ -42,3 +42,30 @@ def char_age():
             continue
 
 print "Greetings " + "," + char_race() + " "  +  char_name() + " ! " + "You are " + char_age() + " years old" +  "."
+
+# Function to choose first chamber
+def first_chamber():
+    while True:
+        first_chamber={
+        'Left': 'Military quarters',
+        'Center': 'Cellar',
+        'Right': 'Servants quarters'
+}
+        direction=raw_input("Where would You like to go? (Left/Right/Center): ")
+        for key in first_chamber.items():
+            if direction in first_chamber:
+                if direction=='Left':
+                    print "You enter " + first_chamber[direction] + "." + " Watch out for undead troops!!!"
+                elif direction=='Right':
+                    print "You enter " + first_chamber[direction] + "." + " Something or someone can eat You here...Watch Your back..."
+                elif direction=='Center':
+                    print "You enter " + first_chamber[direction] + "." + " Whats crawling below?"
+                #print first_chamber[direction]
+                return first_chamber[direction]
+                break
+            else:
+                print "Wrong direction, choose again..."
+                continue
+
+first_chamber()
+
