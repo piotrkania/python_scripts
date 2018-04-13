@@ -2,6 +2,17 @@
 import welcome
 import re
 
+#Greetings
+
+print """
+You yawn widely, and scratch Your head.
+ 'What happend yesterday? I can't remember anything...
+  Last moment, last thing that I remember was this...person...thing...
+  Who or what was that?'
+"""
+
+
+
 # Function to provide characters race
 def char_race():
     race_list=['Orc','Human','Elf','Dwarf']
